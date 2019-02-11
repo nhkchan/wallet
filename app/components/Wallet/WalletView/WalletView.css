@@ -1,0 +1,30 @@
+.walletView {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerContainer {
+  background: linear-gradient(270deg, #349CD0 0%, #0A578E 100%);
+  z-index: 2;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 2;
+  margin: 20px 0px 15px 0px;
+}
+
+.buttonContainer button {
+  width: 140px;
+  margin: 5px;
+}
+
+.moreMenu {
+  position: absolute;
+  right: 30px;
+  top: 42px;
+}

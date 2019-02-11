@@ -1,0 +1,74 @@
+.tx {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+  color: #000;
+  margin: 5px auto 0px auto;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 300ms;
+  max-width: 750px;
+}
+
+.tx:hover {
+  transition: 50ms;
+  transform: translateX(3px);
+}
+
+.txType {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.txType svg {
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+}
+
+.txInfo {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.txAmount {
+  display: inline-block;
+  font-family: "Source Code Pro", monospace;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.txDate {
+  font-size: 11px;
+}
+
+.red {
+  color: #ed3f23;
+}
+
+.green {
+  color: #1fbe9a;
+}
+
+.iconFreeze {
+  fill: #00b2ff;
+}
+
+.iconToken {
+  fill: #ffdb00;
+}
+
+.iconReceived {
+  fill: #1fbe9a;
+  transform: rotate(180deg);
+}
+
+.iconSent {
+  fill: #ed3f23;
+}

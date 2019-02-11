@@ -1,0 +1,80 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  background-color: #0b0f12;
+}
+
+.white {
+  color: #fff !important;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  max-height: 580px;
+  max-width: 400px;
+  height: 100%;
+  width: 100%;
+  min-width: 350px;
+  margin: 40px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  /*
+    padding: 40px;
+    box-sizing: border-box;
+    */
+}
+
+.subContainer button {
+  margin-top: auto;
+}
+
+.headerBG {
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(270deg, #349CD0 0%, #0A578E 100%);
+}
+
+.logo {
+  stroke: #000;
+  background: white;
+  width: 60px;
+  height: 60px;
+  stroke-linecap: round;
+  padding: 20px;
+  margin-top: -50px;
+  border-radius: 10px;
+  overflow: visible;
+}
+
+.tokenName {
+}
+
+.tokenInfoContainer {
+  padding: 10px 80px;
+  box-sizing: border-box;
+  flex: 1;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+}
+
+.tokenHeader {
+  margin-top: 15px;
+}
+
+.tokenHeaderText {
+  margin-top: 10px;
+  word-wrap: break-word;
+  color: #828282;
+  font-weight: 300;
+}
+
+.divider {
+  margin-top: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}

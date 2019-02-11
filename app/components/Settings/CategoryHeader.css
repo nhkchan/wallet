@@ -1,0 +1,14 @@
+.container {
+  margin-top: 30px;
+  text-align: left;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  box-sizing: border-box;
+  padding: 0px 30px;
+  cursor: default;
+}
+
+.header {
+  margin-left: 10px;
+}

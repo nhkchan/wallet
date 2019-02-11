@@ -1,0 +1,92 @@
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.slider input[type="range"] {
+  width: 100%;
+}
+
+.amount {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Source Code Pro", monospace;
+  font-size: 20px;
+  font-weight: 600;
+  float: right;
+  margin-bottom: 5px;
+  z-index: 5;
+  width: 100%;
+}
+.price {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Source Code Pro", monospace;
+  font-size: 12px;
+  font-weight: 600;
+  float: left;
+  margin-bottom: 10px;
+  z-index: 5;
+  width: 100%;
+}
+
+.sliderRange {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Source Code Pro", monospace;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.sliderRange span {
+  font-size: 12px;
+}
+
+.sliderContainer {
+  position: relative;
+}
+
+.progress {
+  position: absolute;
+  bottom: 10px;
+  height: 6px;
+  background: #0A578E;
+  z-index: -1;
+}
+
+.sliderBG {
+  position: absolute;
+  bottom: 10px;
+  height: 6px;
+  background: rgba(0, 0, 0, 0.05);
+  z-index: -1;
+  width: 100%;
+}
+
+.input {
+  z-index: 4;
+  height: 30px;
+  flex-grow: 1;
+}
+
+.input input {
+  font-family: "Source Code Pro", monospace;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: right;
+  background: rgb(247, 247, 247);
+  height: 30px;
+  line-height: 30px;
+  outline: none;
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+
+.amountLabel {
+
+}

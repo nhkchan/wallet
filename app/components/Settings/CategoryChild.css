@@ -1,0 +1,55 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 10px 0px 10px;
+  padding: 0px 10px;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-bottom: 1px solid #333;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: 300ms;
+}
+
+.container:hover {
+  transition: 0ms;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.container svg {
+  fill: #fff;
+}
+
+.container > div {
+  margin-left: 20px;
+}
+
+.container:last-child {
+  border-bottom: none;
+}
+
+.active {
+  border-top: 2px solid #349CD0;
+  border-left: 2px solid #349CD0;
+  border-bottom: 2px solid #0A578E !important;
+  border-right: 2px solid #0A578E;
+  transition: 75ms;
+  margin: 10px 0px 0px 0px;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0px 0px 10px #292929;
+}
+
+.text {
+  margin: 4px 0px;
+}
+
+.subText {
+  font-size: 10px;
+}

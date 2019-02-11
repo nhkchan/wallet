@@ -1,0 +1,74 @@
+.container { 
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: linear-gradient(0deg, #31353e 0%, #192028 51.21%, #0b0f12 100%);
+  min-width: 350px;
+  overflow: auto;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.votesContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.votesContainer::-webkit-scrollbar {
+  border-left: 5px solid rgba(255, 255, 255, 0.02);
+  width: 10px;
+}
+
+.votesContainer::-webkit-scrollbar-thumb {
+  border-left: 5px solid rgba(255, 255, 255, 0.06);
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 10px;
+}
+
+.buttonContainer {
+  position: absolute;
+  right: 10px;
+  left: 0;
+  bottom: 0;
+  padding: 20px 30px 20px 40px;
+  z-index: 5;
+  box-sizing: border-box;
+}
+
+.buttonContainer > div {
+  box-shadow: 0px 0px 7px #212121;
+}
+
+.input {
+  min-height: 32px;
+  background: #12181d;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  width: 100%;
+  text-indent: 10px;
+  color: #fff;
+  width: 290px;
+  margin: 80px auto 10px auto;
+}
+
+.input:focus {
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  outline: none;
+}
+
+.noResults {
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: #444;
+  font-family: "Source Code Pro";
+  font-size: 13px;
+  text-shadow: 0px 0px 5px #131313;
+}

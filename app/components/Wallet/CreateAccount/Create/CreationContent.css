@@ -1,0 +1,97 @@
+.container {
+  margin-top: 40px;
+  height: 100%;
+  max-height: 540px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  text-align: left;
+  padding: 30px 60px;
+  box-sizing: border-box;
+}
+
+.container button {
+  margin-top: auto;
+  width: 100%;
+  height: 100%;
+  background: none;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.container button:focus {
+  outline: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.form input[type="text"] {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding: 10px 20px;
+  font-size: 12px;
+  margin: 20px 0px;
+  box-sizing: border-box;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.header {
+  font-size: 14px;
+}
+
+.radioSection {
+  display: flex;
+  background-color: #0d1115;
+  padding: 25px 20px;
+}
+
+.radioSection:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 1px solid #333333;
+}
+
+.radioSection:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.radioContainerMain {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.radioHeader {
+  font-family: "Source Code Pro";
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.radioList {
+}
+
+.radioList li {
+  list-style-type: disc;
+  color: grey;
+  font-size: 11px;
+  margin: 5px 15px;
+}
+
+.radioButton {
+  margin-right: 15px;
+  margin-top: -4px;
+}
+
+.btn {
+  margin: auto;
+}

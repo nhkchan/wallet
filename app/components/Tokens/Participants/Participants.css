@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.buttonContainer {
+  position: absolute;
+  right: 10px;
+  left: 0;
+  bottom: 0;
+  padding: 20px 30px 20px 40px;
+  z-index: 5;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, transparent, #31353e 90%);
+}
+
+.buttonContainer > div {
+  box-shadow: 0px 0px 7px #212121;
+}
+
+.tokensContainer {
+  position: relative;
+  overflow-y: overlay;
+  box-sizing: border-box;
+  flex: 1;
+  z-index: 2;
+  padding: 10px 30px 30px 30px;
+}
+
+.tokensContainer::-webkit-scrollbar {
+  border-left: 5px solid rgba(255, 255, 255, 0.08);
+  width: 10px;
+}
+
+.tokensContainer::-webkit-scrollbar-thumb {
+  border-left: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.input {
+  height: 32px;
+  background: #12181d;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  width: 100%;
+  text-indent: 10px;
+  color: #fff;
+  width: 290px;
+  margin: 0 auto 10px auto;
+}
+
+.input:focus {
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  outline: none;
+}
+
+.noResults {
+}

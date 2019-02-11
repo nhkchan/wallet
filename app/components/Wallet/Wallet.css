@@ -1,0 +1,100 @@
+.wallet {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  margin: 5px 20px 0px 20px;
+  transition: background-color 300ms;
+  cursor: pointer;
+  padding: 20px 0px;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  transition: 250ms;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
+}
+
+.wallet:hover {
+  transition: 0s;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.wallet:first-child {
+  margin: 85px 20px 0px 20px;
+}
+
+.wallet:last-child {
+  margin: 5px 20px 85px 20px;
+}
+
+.wallet:first-child:last-child {
+  margin: 85px 20px 0px 20px;
+}
+
+.wallet > .walletIcon {
+  fill: #9b9b9b;
+  font-size: 25px;
+  padding: 0px 20px;
+  min-width: 24px;
+}
+
+.wallet > .arrowIcon {
+  fill: #fff;
+  font-size: 30px;
+  padding: 15px;
+  min-width: 24px;
+}
+
+.wallet svg {
+  margin: auto 0px;
+}
+
+.walletInfo {
+  font-size: 12px;
+  text-align: left;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.token {
+  font-family: "Source Code Pro", monospace;
+  color: #9b9b9b;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.walletInfo > .name {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  margin-bottom: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.walletInfo > .address {
+  font-family: "Roboto", sans-serif;
+  font-size: 9px;
+  color: #fff;
+  margin-bottom: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.publicKey {
+  font-size: 9px;
+  color: #5d5d5d;
+  text-overflow: ellipsis;
+  width: 100px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top: 2px solid #349CD0;
+  border-left: 2px solid #349CD0;
+  border-bottom: 2px solid #0A578E !important;
+  border-right: 2px solid #0A578E;
+}

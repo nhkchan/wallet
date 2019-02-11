@@ -1,0 +1,134 @@
+.container {
+  padding: 0;
+  /*
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    background-color: #0B0F12;
+    */
+}
+
+.white {
+  color: #fff !important;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  max-height: 580px;
+  max-width: 400px;
+  height: 100%;
+  width: 100%;
+  min-width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  /*
+    padding: 40px;
+    box-sizing: border-box;
+    */
+}
+
+.subContainer button {
+  margin-top: auto;
+}
+
+.headerBG {
+  position: relative;
+  text-align: left;
+  padding: 0px 75px;
+  box-sizing: border-box;
+  height: 110px;
+  width: 100%;
+  color: #fff;
+  background: linear-gradient(270deg, #349CD0 0%, #0A578E 100%);
+}
+
+.headerIcon {
+  position: absolute;
+  height: 100%;
+  right: 70px;
+  fill: #fff;
+}
+
+.headerType {
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.headerAmount {
+  margin-top: 11px;
+  font-family: "Source Code Pro", monospace;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.headerCurrency {
+  margin-top: 5px;
+  font-family: "Source Code Pro", monospace;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.tokenInfoContainer {
+  padding: 10px 80px;
+  box-sizing: border-box;
+  flex: 1;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+}
+
+.tokenHeader {
+  margin-top: 15px;
+}
+
+.feeContainer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Source Code Pro", monospace;
+}
+
+.feeAmount {
+  font-family: "Source Code Pro", monospace;
+  color: #828282;
+  font-weight: 300;
+}
+
+.feePercentage {
+  color: #000;
+  font-weight: 300;
+}
+
+.walletContainer {
+  margin-top: 10px;
+  color: #828282;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+}
+
+.walletIcon {
+  fill: #828282;
+  margin-right: 10px;
+}
+
+.tokenHeaderText {
+  margin-top: 10px;
+  word-wrap: break-word;
+  color: #828282;
+  font-weight: 300;
+}
+
+.divider {
+  margin-top: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}

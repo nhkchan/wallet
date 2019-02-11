@@ -1,0 +1,77 @@
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.83);
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  min-height: 0px;
+  max-height: 580px;
+  max-width: 400px;
+  width: 100%;
+  min-width: 385px;
+  margin: 40px auto;
+  border-radius: 10px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.modalText {
+  margin-top: 10px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.subContainer button {
+  margin-top: 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.buttonContainer > button:first-child {
+  margin-right: 10px;
+}
+
+.hidden {
+  /*
+    opacity: 0;
+    z-index: -500;*/
+}
+
+.success {
+  fill: #e0f5f0;
+  stroke: #0A578E;
+  width: 50px;
+  height: 50px;
+}
+
+.failure {
+  fill: #f16767;
+  stroke: #ca3f3f;
+  width: 50px;
+  height: 50px;
+}
+
+.warning {
+  fill: #f1f167;
+  stroke: #d6d67e;
+  width: 50px;
+  height: 50px;
+}

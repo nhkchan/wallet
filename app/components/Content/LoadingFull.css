@@ -1,0 +1,25 @@
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loadingContainer {
+  margin-top: -50px;
+}
+
+.loading {
+  width: 200px;
+  height: 200px;
+}
+
+.loadingText {
+  font-size: 11px;
+  font-family: "Source Code Pro", monospace;
+  color: #484d56;
+  margin-top: -50px;
+}

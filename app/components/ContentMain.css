@@ -1,0 +1,62 @@
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.importantMsg {
+  height: 50px;
+  text-align: center;
+  background: #ff3737;
+  border-bottom: 1px solid red;
+  width: 100%;
+  z-index: 100;
+  line-height: 50px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.interface {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.contentPrimary {
+  position: relative;
+  min-width: 350px;
+  flex-basis: 33%;
+  background: linear-gradient(0deg, #31353e 0%, #192028 51.21%, #0b0f12 100%);
+}
+
+.contentSecondary {
+  position: relative;
+  height: 100%;
+  width: 0;
+  flex-grow: 1;
+  background-image:url('assets/images/ripple.gif');
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.routerAnimate {
+  position: relative;
+  transition: 300ms;
+  height: 100%;
+}
+
+.routerAnimate > div {
+  position: absolute;
+  height: 100%;
+}

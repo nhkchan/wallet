@@ -1,0 +1,50 @@
+.container {
+  position: relative;
+  background: linear-gradient(0deg, #31353e 0%, #192028 51.21%, #0b0f12 100%);
+  width: 350px;
+  box-sizing: border-box;
+}
+
+.contactBar {
+  position: absolute;
+  left: 0;
+  right: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+  padding: 30px 20px 25px 30px;
+  background-image: linear-gradient(
+    to bottom,
+    #0b0f12 20%,
+    rgba(12, 16, 19, 0.8) 70%,
+    rgba(0, 0, 0, 0)
+  );
+  z-index: 5;
+}
+
+.contactBar svg {
+  font-size: 24px;
+  fill: #c1c1c1;
+}
+
+.contactContainer {
+  height: 100%;
+  overflow-y: overlay;
+}
+
+.buttonContainer {
+  position: absolute;
+  right: 10px;
+  left: 0;
+  bottom: 0;
+  padding: 20px 30px 20px 40px;
+  z-index: 5;
+  box-sizing: border-box;
+}
+
+.buttonContainer > div {
+  box-shadow: 0px 0px 7px #212121;
+}

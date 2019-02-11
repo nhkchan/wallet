@@ -1,0 +1,155 @@
+import React, {Component} from 'react';
+import Chart from './Chart';
+const TronHttpClient = require("tron-http-client");
+const client = new TronHttpClient();
+import Secondary from "../Content/Secondary";
+import styles from "../Vote/VoteDetails/VoteDetails.css";
+
+class PieChart extends Component {
+
+  constructor(){
+    super();
+    this.state = {
+      chartData:{},
+      status : false
+    }
+    this.getRandomColor = this.getRandomColor.bind(this);
+  }
+
+  componentWillMount(){
+    this.populateRepresentativesScreen();
+  }
+
+  populateRepresentativesScreen(){
+    let loaded = null;
+    var screenNo = JSON.parse(window.localStorage.getItem("SCREEN_NO"));
+    try {
+      loaded = JSON.parse(window.localStorage.getItem("REPRESENTATIVES_LIST"));
+    } catch (e) {}
+    var labelArray = new Array();
+    var dataArray = new Array();
+    var colorArray = new Array();
+    if(loaded!=null){
+      for(var i=0; i< loaded.length; i++){
+        var element = loaded[i];
+        labelArray[i] = ""+element.url;
+        dataArray[i] = +element.votecount;
+        colorArray[i] = ""+this.getRandomColor();
+      }
+    }
+    
+    this.setState({
+      chartData:{
+        labels: labelArray,
+        screenFlag: ""+screenNo,
+        datasets:[
+          {
+            label:'Representatives',
+            data:dataArray,
+            backgroundColor:colorArray
+          }
+        ]
+      }
+    });
+  }
+
+  getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+
+  render() {
+    return (
+      <Secondary>
+        <div className="ticker-wrap">
+        <div className="ticker">
+          <div className="ticker__item">Letterpress chambray brunch.</div>
+          <div className="ticker__item">Vice mlkshk crucifix beard chillwave meditation hoodie asymmetrical Helvetica.</div>
+          <div className="ticker__item">Ugh PBR&B kale chips Echo Park.</div>
+          <div className="ticker__item">Gluten-free mumblecore chambray mixtape food truck. </div>
+        </div>
+        </div>
+<div id="impress" className="impress-not-supported">
+
+<div id="intro" className="step" data-x="0" data-y="0">
+      <section className="main">
+				<div id="sb-container" className="sb-container">
+					<div>
+						<span className="sb-icon icon-cog"></span>
+						<h4><span>Online Nodes</span></h4>
+					</div>
+					<div>
+						<span className="sb-icon icon-flight"></span>
+						<h4><span>Block Height</span></h4>
+					</div>
+					<div>
+						<span className="sb-icon icon-eye"></span>
+						<h4><span>Current/Max TPS</span></h4>
+					</div>
+					<div>
+						<span className="sb-icon icon-install"></span>
+						<h4><span>Transactions Last Day</span></h4>
+					</div>
+					<div>
+						<span className="sb-icon icon-bag"></span>
+						<h4><span>Total Accounts</span></h4>
+					</div>
+					<div>
+						<span className="sb-icon icon-globe"></span>
+						<h4><span>Price</span></h4>
+					</div>
+				</div>
+
+			</section>
+  </div>
+
+  <div id="simplicity" className="step" data-x="1100" data-y="1200" data-scale="1.8" data-rotate="190">
+  <Chart chartData={this.state.chartData} location="Representatives" legendPosition="bottom" id="charts"/>
+  </div>
+
+  <div id="connect" className="step" data-x="2700" data-y="2900" data-scale="1.8" data-rotate="270">
+
+      <div id="clockdiv">
+                <div>
+                  <span className="days" id="days"></span>
+                  <div className="smalltext">Days</div>
+                </div>
+                &nbsp;
+                <div>
+                  <span className="hours" id="hours"></span>
+                  <div className="smalltext">Hours</div>
+                </div>
+                &nbsp;
+                <div>
+                  <span className="minutes" id="minutes"></span>
+                  <div className="smalltext">Minutes</div>
+                </div>
+                &nbsp;
+                <div>
+                  <span className="seconds" id="seconds"></span>
+                  <div className="smalltext">Seconds</div>
+                </div>
+              </div>
+  </div>
+
+  <div id="upload" className="step" data-x="4000" data-y="4200" data-scale="1.8" data-rotate="180">
+  <Chart chartData={this.state.chartData} location="Representatives" legendPosition="bottom" id="charts"/>
+
+  </div>
+
+  <div id="music" className="step" data-x="5700" data-y="5900" data-scale="1.8" data-rotate="354">
+  <Chart chartData={this.state.chartData} location="Representatives" legendPosition="bottom" id="charts"/>
+  </div>
+
+</div>
+
+<a id="arrowRight" className="arrow">&gt;</a>
+      </Secondary>
+    );
+  }
+}
+export default PieChart;

@@ -1,0 +1,18 @@
+.backArrow {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border-top: 2px solid #349CD0;
+  border-left: 2px solid #349CD0;
+  border-bottom: 2px solid #0A578E;
+  border-right: 2px solid #0A578E;
+  border-radius: 10px;
+  fill: #fff;
+  padding: 10px 10px 8px 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.backArrow:hover {
+  background: rgba(255, 255, 255, 0.1);
+}

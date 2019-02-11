@@ -1,0 +1,64 @@
+.vote {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+  color: #000;
+  margin: 5px auto 0px auto;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 300ms;
+  max-width: 750px;
+}
+
+.vote:hover {
+  transition: 50ms;
+  transform: translateX(3px);
+}
+
+.voteType {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.voteType svg {
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+}
+
+.voteInfo {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.voteAmount {
+  font-family: "Source Code Pro", monospace;
+  margin-bottom: 5px;
+  color: #ed3f23;
+}
+
+.voteDate {
+  font-size: 11px;
+}
+
+.red {
+  color: #ed3f23;
+}
+
+.green {
+  color: #1fbe9a;
+}
+
+.icon {
+  fill: #1fbe9a;
+}
+
+.iconSent {
+  fill: #ed3f23;
+}

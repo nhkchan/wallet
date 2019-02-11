@@ -1,0 +1,101 @@
+.container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 200;
+}
+
+.subContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.modalHeader {
+    color: #fff;
+    font-size: 20px;
+}
+
+.modalContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 50px;
+    background: #fff;
+    min-width: 400px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.textInput input {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border-top: 2px solid #349CD0;
+    border-left: 2px solid #349CD0;
+    border-bottom: 2px solid #0A578E;
+    border-right: 2px solid #0A578E;
+    margin-top: 20px;
+    text-indent: 40px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 80%;
+    margin: 15px auto;
+}
+
+.btn button {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.weak {
+    color: red;
+}
+.ok {
+    color: orangered;
+}
+.good {
+    color: orange;
+}
+.strong {
+    color: yellowgreen;
+}
+.perfect {
+    color: green;
+}
+
+.status {
+    font-size: 12px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.buttonContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonContainer button:first-child:last-child {
+    margin-left: auto;
+}
+
+.buttonContainer button:last-child {
+    margin-left: 10px;
+}

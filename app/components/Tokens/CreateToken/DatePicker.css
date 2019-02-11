@@ -1,0 +1,16 @@
+.datePicker {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  padding: 10px 30px;
+  border-radius: 25px;
+  margin: 0 auto 20px auto;
+  background-color: #fff;
+  z-index: 100;
+  text-align: center;
+}
+
+.datePicker > div:last-child {
+  padding-left: 22px;
+  border-left: 1px solid #cacaca;
+}

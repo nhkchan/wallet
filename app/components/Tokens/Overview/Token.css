@@ -1,0 +1,57 @@
+.token {
+  position: relative;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  margin-top: 5px;
+  transition: background-color 300ms;
+  cursor: pointer;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+.token:hover {
+  transition: 0s;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.token:first-child {
+  margin-top: 0px;
+}
+
+.token:last-child {
+  margin-bottom: 55px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex-grow: 1;
+}
+
+.title {
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+  margin: 10px 0px;
+  font-size: 11px;
+}
+
+.subContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px 0px;
+}
+
+.subTitle {
+  color: grey;
+}
+
+.subVal {
+  color: #fff;
+  font-weight: 300;
+}

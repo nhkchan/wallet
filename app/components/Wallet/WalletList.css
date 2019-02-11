@@ -1,0 +1,126 @@
+.container {
+  position: relative;
+  min-width: 350px;
+  flex-basis: 33%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.walletContainer {
+  height: 100%;
+  overflow-y: overlay;
+}
+
+.walletContainer::-webkit-scrollbar {
+  border-left: 5px solid rgba(255, 255, 255, 0.02);
+  width: 10px;
+}
+
+.walletContainer::-webkit-scrollbar-thumb {
+  border-left: 5px solid rgba(255, 255, 255, 0.06);
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 10px;
+}
+
+.buttonContainer {
+  position: absolute;
+  right: 10px;
+  left: 0;
+  bottom: 0;
+  padding: 20px 30px 20px 40px;
+  z-index: 5;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, transparent, #31353e 90%);
+}
+
+.buttonContainer > div {
+  box-shadow: 0px 0px 7px #212121;
+}
+
+
+
+
+
+
+.tosContainer {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: #2c2d31;
+}
+
+.tosHeader {
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.tosHeader span {
+  color: red;
+}
+
+.tosHeader .tosSubText {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+.tosBox {
+  width: 50%;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  padding: 5px;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #e0e0e0, #d0d0d0);
+}
+
+.tosCheckboxContainer {
+  color: #000;
+  font-size: 14px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.tosCheckboxContainer label {
+  cursor: pointer;
+}
+
+.tos {
+  background-color: white;
+  max-height: 300px;
+  overflow-y: scroll;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #c5c5c5;
+}
+
+.tosBtn {
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 40%;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: 100ms;
+  margin-bottom: 15px;
+}
+
+.tosBtn:hover {
+  background: black;
+  color: #fff;
+}

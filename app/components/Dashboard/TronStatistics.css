@@ -1,0 +1,85 @@
+.experiment {
+    -webkit-perspective: 800px;
+    -webkit-perspective-origin: 50% 200px;
+}
+
+.cube {
+    position: relative;
+    margin: 0 auto;
+    height: 400px;
+    width: 400px;
+    -webkit-transition: -webkit-transform 2s linear;
+    -webkit-transform-style: preserve-3d;
+}
+
+.face1  {
+    position: absolute;
+    height: 360px;
+    width: 360px;
+    font-size: 20px;
+    line-height: 300px;
+    color: white;
+    padding: 20px;
+    background-color: rgba(255, 0, 0, 0.5);
+    -webkit-transform: rotateX(90deg) translateZ(200px);
+}
+
+.face2 {
+    position: absolute;
+    height: 360px;
+    width: 360px;
+    font-size: 20px;
+    line-height: 300px;
+    color: white;
+    padding: 20px;
+    background-color: rgba(255, 0, 0, 0.5);
+    -webkit-transform: translateZ(200px);
+}
+
+.face3 {
+    position: absolute;
+    height: 360px;
+    width: 360px;
+    font-size: 20px;
+    line-height: 300px;
+    color: white;
+    padding: 20px;
+    background-color: rgba(255, 0, 0, 0.5);
+    -webkit-transform: rotateY(90deg) translateZ(200px);
+}
+
+.face4 {
+    position: absolute;
+    height: 360px;
+    width: 360px;
+    font-size: 20px;
+    line-height: 300px;
+    color: white;
+    padding: 20px;
+    background-color: rgba(255, 0, 0, 0.5);
+    -webkit-transform: rotateY(180deg) translateZ(200px);
+}
+
+.face5 {
+    position: absolute;
+    height: 360px;
+    width: 360px;
+    font-size: 20px;
+    line-height: 300px;
+    color: white;
+    padding: 20px;
+    background-color: rgba(255, 0, 0, 0.5);
+    -webkit-transform: rotateY(-90deg) translateZ(200px);
+}
+
+.face6 {
+    position: absolute;
+    height: 360px;
+    width: 360px;
+    font-size: 20px;
+    line-height: 300px;
+    color: white;
+    padding: 20px;
+    background-color: rgba(255, 0, 0, 0.5);
+    -webkit-transform: rotateX(-90deg) translateZ(200px) rotate(180deg);
+}

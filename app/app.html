@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TronATM</title>
+    <style>
+      #time { 
+    text-align: center;
+    color:White;
+    }
+
+        #clockdiv{
+          font-family: sans-serif;
+          color: #fff;
+          display: inline-block;
+          font-weight: 100;
+          text-align: center;
+          font-size: 30px;
+        }
+
+        #clockdiv > div{
+          padding: 10px;
+          border-radius: 3px;
+          background: linear-gradient(90deg, #349CD0 0%, #0A578E 100%);
+          display: inline-block;
+        }
+
+        #clockdiv div > span{
+          padding: 15px;
+          border-radius: 3px;
+          background: linear-gradient(0deg, #0A578E 0%, #349CD0 100%);
+          display: inline-block;
+        }
+
+        .smalltext{
+          padding-top: 5px;
+          font-size: 16px;
+        }
+
+    @-webkit-keyframes ticker {
+      0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+      }
+      100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+      }
+    }
+    @keyframes ticker {
+      0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+      }
+      100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+      }
+    }
+    .ticker-wrap {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      overflow: hidden;
+      height: 4rem;
+      background-color: linear-gradient(0deg, #31353e 0%, #192028 51.21%, #0b0f12 100%);
+      padding-left: 100%;
+      box-sizing: content-box;
+    }
+      .ticker-wrap-hidden {
+          position: fixed;
+          top: 0;
+          width: 100%;
+          overflow: hidden;
+          visibility: hidden;
+          height: 4rem;
+          background-color: linear-gradient(0deg, #31353e 0%, #192028 51.21%, #0b0f12 100%);
+          padding-left: 100%;
+          box-sizing: content-box;
+      }
+    .ticker-wrap .ticker {
+      display: inline-block;
+      height: 4rem;
+      line-height: 4rem;
+      white-space: nowrap;
+      padding-right: 100%;
+      box-sizing: content-box;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-name: ticker;
+      animation-name: ticker;
+      -webkit-animation-duration: 30s;
+      animation-duration: 30s;
+    }
+    .ticker-wrap .ticker__item {
+      display: inline-block;
+      padding: 0 2rem;
+      font-size: 2rem;
+      color: #349CD0
+    }
+
+      </style>
+    <script>
+      (function() {
+        if (!process.env.HOT) {
+          const link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = './dist/style.css';
+          // HACK: Writing the script path should be done with webpack
+          document.getElementsByTagName('head')[0].appendChild(link);
+        }
+      }());
+
+      // Set the date we're counting down to
+      var countDownDate = new Date("Oct 30, 2019 19:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+          
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+          
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        var clock=document.getElementById('clockdiv');
+        // only update countdown if its present.
+        if(clock!=null){
+          document.getElementById('days').innerHTML = days;
+          document.getElementById('hours').innerHTML = hours;
+          document.getElementById('minutes').innerHTML = minutes;
+          document.getElementById('seconds').innerHTML = seconds;
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+          document.getElementById('days').innerHTML = 0;
+          document.getElementById('hours').innerHTML = 0;
+          document.getElementById('minutes').innerHTML = 0;
+          document.getElementById('seconds').innerHTML = 0;
+          }
+        }
+
+
+        
+      }, 1000);
+    </script>
+    		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Open+Sans:300" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+          <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+          <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+          <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+          <script src="https://www.amcharts.com/lib/3/amstock.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      {
+        const scripts = [];
+
+        // Dynamically insert the DLL script in development env in the
+        // renderer process
+        if (process.env.NODE_ENV === 'development') {
+          scripts.push('../dll/renderer.dev.dll.js');
+        }
+
+        // Dynamically insert the bundled app script in the renderer process
+        const port = process.env.PORT || 1212;
+        scripts.push(
+          (process.env.HOT)
+            ? 'http://localhost:' + port + '/dist/renderer.dev.js'
+            : './dist/renderer.prod.js'
+        );
+
+        document.write(
+          scripts
+            .map(script => '<script defer src="' + script + '"><\/script>')
+            .join('')
+        );
+      }
+    </script>
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  </body>
+</html>

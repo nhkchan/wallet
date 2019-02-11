@@ -1,0 +1,108 @@
+.button {
+  font-family: "Source Code Pro";
+  font-weight: 500;
+  font-size: 13px;
+  height: 45px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  transition: 200ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+}
+
+.button:hover {
+  transition: 0ms;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.black {
+  background-color: #0b0f12;
+  color: #eee;
+}
+
+.green {
+  background-color: #1fbe9a;
+  color: #0b0f12;
+}
+
+.gradient {
+  color: #fff;
+  background: linear-gradient(270deg, #0A578E 0%, #349CD0 100%);
+}
+
+.black:hover {
+  color: #fff;
+  background-color: #060606;
+}
+
+.black:active {
+  color: #aaa;
+  opacity: 0.9;
+}
+
+.green:hover {
+  background-color: #1fbe9a;
+  color: #0b0f12;
+}
+
+.gradient:hover {
+  background: linear-gradient(270deg, #349CD0 0%, #0A578E 100%);
+}
+
+.gradient:active {
+  color: #efefef;
+  opacity: 0.9;
+}
+
+.button svg {
+  fill: #000;
+  margin-top: -4px;
+  margin-right: 10px;
+}
+
+.black svg {
+  fill: #fff;
+  margin-top: -4px;
+  margin-right: 10px;
+}
+
+.gradient svg {
+  fill: #fff;
+  margin-top: -4px;
+  margin-right: 10px;
+}
+
+.iconButton {
+  height: 45px;
+  width: 45px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  transition: 100ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconButton svg {
+  fill: #fff;
+  margin: 0 !important;
+}
+
+.iconButton:focus {
+  outline: none;
+}

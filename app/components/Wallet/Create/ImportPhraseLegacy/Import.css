@@ -1,0 +1,109 @@
+.container {
+  margin-top: 40px;
+  height: 100%;
+  max-height: 640px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  text-align: left;
+  padding: 30px 60px;
+  box-sizing: border-box;
+}
+
+.container button {
+  margin-top: auto;
+  width: 100%;
+  height: 100%;
+  background: none;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.container button:focus {
+  outline: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.header {
+  font-size: 14px;
+}
+
+.btn {
+  margin: auto;
+}
+
+.wordContainer {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  font-size: 12px;
+  border: 2px solid #349CD0;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Source Code Pro", monospace;
+  max-width: 360px;
+}
+
+.wordColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.wordColumn:first-child {
+  margin-right: 4px;
+}
+
+.word {
+  margin-top: 5px;
+  flex-grow: 1;
+}
+
+.word span {
+  display: inline-block;
+  white-space: nowrap;
+  line-height: 20px;
+  font-weight: 700;
+  color: #349CD0;
+}
+
+.word > div {
+  display: inline-block;
+}
+
+.word input {
+  width: 100px;
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
+  margin-left: 5px;
+  font-family: "Source Code Pro", monospace;
+}
+
+.word input:focus {
+  outline: none;
+}
+
+.invalid {
+  color: red;
+}
+
+.legacyWarning{
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: normal;
+  color:red;
+}

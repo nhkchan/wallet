@@ -1,0 +1,77 @@
+.main {
+}
+
+.scroll {
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  min-width: 0;
+}
+
+.scroll::-webkit-scrollbar {
+  border-bottom: 8px solid rgba(255, 255, 255, 0.2);
+  height: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  border-bottom: 8px solid rgba(255, 255, 255, 0.35);
+}
+
+.mainAmount {
+  font-family: "Source Code Pro", monospace;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.mainAmount span {
+  font-weight: 300;
+}
+
+.subContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.subAmountContainer {
+  min-width: 175px;
+  margin: 0px 50px;
+}
+
+.subAmountHeader {
+  color: #fff;
+  font-size: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.29);
+  text-align: center;
+  display: inline-block;
+}
+
+.subAmount {
+  font-family: "Source Code Pro", monospace;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.subAmount span {
+  font-weight: 300;
+}
+
+.tpExpire {
+  font-family: "Source Code Pro", monospace;
+  color: #fff;
+  font-size: 10px;
+  margin-top: 2px;
+}
+
+.container {
+  display: inline-block;
+  white-space: nowrap;
+  margin: 10px 0px;
+}
+
+.coinContainer:hover {
+  transition: 0ms;
+  background: rgba(255, 255, 255, 0.3);
+}

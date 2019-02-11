@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Source Code Pro", monospace;
+  color: #828282;
+  font-size: 11px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tokenContainer {
+}
+
+.progress {
+  -webkit-appearance: none;
+  height: 11px;
+  border: 2px solid #0A578E;
+  border-radius: 10px;
+  width: 100%;
+  margin: 8px 0px;
+}
+
+.progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+.progress::-webkit-progress-value {
+  background-color: #0A578E;
+}
+
+.bottom {
+  text-align: left;
+}
+
+.green {
+  color: #0A578E;
+}

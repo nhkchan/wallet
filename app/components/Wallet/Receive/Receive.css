@@ -1,0 +1,39 @@
+.subHeader {
+  font-size: 13px;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 175px;
+  margin-top: 20px;
+}
+
+.addressContainer {
+  margin: 50px 0px;
+  width: 100%;
+}
+
+.copyBtn {
+  margin-top: 10px !important;
+}
+
+.addressLabel {
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.textBox {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding: 10px 20px;
+  font-size: 12px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.textBox:focus {
+  outline: none;
+}

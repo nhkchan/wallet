@@ -1,0 +1,220 @@
+.container button:focus {
+  outline: none;
+}
+
+.headerContainer {
+  background: linear-gradient(270deg, #349CD0 0%, #0A578E 100%);
+  z-index: 2;
+}
+
+.headerTP {
+  font-family: "Source Code Pro", monospace;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.headerTP span {
+  margin-left: 20px;
+  font-weight: 300;
+}
+
+.headerText {
+  font-size: 11px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.headerSubText {
+  font-size: 11px;
+  color: #fff;
+  margin-top: 2px;
+  margin-bottom: 20px;
+}
+
+.voteContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  background-color: #fff;
+  padding: 35px 20px 90px 20px;
+  box-sizing: border-box;
+  margin: 20px auto 0px auto;
+  border-radius: 5px;
+  width: auto;
+  overflow-y: overlay;
+  min-width: 825px;
+}
+
+.votingFor {
+  font-size: 12px;
+}
+
+.votingFor span {
+  color: #349CD0;
+}
+
+.dropdown {
+  position: relative;
+  width: 70%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+  text-indent: 20px;
+  font-size: 12px;
+  margin: 30px 0px;
+}
+
+.dropdown svg {
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  transform: rotate(90deg);
+  z-index: -1;
+}
+
+.input {
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.input input {
+  height: 30px;
+  border: 1px solid #888888;
+  border-radius: 5px;
+  text-indent: 20px;
+  width: 100%;
+}
+
+.input input:focus {
+  outline: none;
+}
+
+.voteTable {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.voteHeader {
+  display: flex;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  min-height: 15px;
+}
+
+.voteBody {
+  position: relative;
+  overflow-y: overlay;
+  box-sizing: border-box;
+  flex: 1;
+  z-index: 2;
+  height: 100%;
+}
+
+.voteBody::-webkit-scrollbar {
+  border-left: 8px solid rgba(0, 0, 0, 0.05);
+  width: 10px;
+}
+
+.voteBody::-webkit-scrollbar-thumb {
+  border-left: 8px solid rgba(0, 0, 0, 0.1);
+}
+
+.voteLabel {
+
+}
+
+.voteRow {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 12px;
+  padding: 20px 0px;
+  border-bottom: 1px solid #dcdcdc;
+  cursor: default;
+}
+
+.voteCol1 {
+  width: 10%;
+  min-width: 40px;
+}
+
+.voteCol2 {
+  width: 50%;
+}
+
+.voteCol3 {
+  width: 20%;
+}
+
+.voteCol4 {
+  width: 20%;
+}
+
+.voteName {
+  font-weight: 700;
+}
+
+.voteAddress {
+  margin-top: 8px;
+}
+
+.voteInput input {
+  width: 90px;
+  height: 32px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid grey;
+  outline: none;
+  box-sizing: border-box;
+  transition: 300ms;
+}
+
+.voteInput input:focus {
+  border: 2px solid #0A578E;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  left: 0;
+  bottom: 0;
+  padding: 20px 30px 20px 40px;
+  z-index: 5;
+  box-sizing: border-box;
+}
+
+.buttonContainer button:nth-child(1) {
+  width: 150px;
+  margin: 5px;
+}
+
+.buttonContainer button:nth-child(2) {
+  width: 250px;
+  margin: 5px;
+}
+
+.buttonContainer button {
+  width: 75px;
+  margin: 5px;
+}
+
+
+@media (max-width: 1310px) {
+  .voteContainer {
+    width: 100%;
+    min-width: 0px;
+  }
+}
